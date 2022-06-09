@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"name": "Discord You",
+		"author": "king_ultron99",
+		"version": "1.0.0d",
+		"description": "A customizable Discord theme based off of Google's Material 3 ( AKA Material You ) design system.",
+		"source": "https://github.com/kings-discord-stuff/discord-you.git"
+	},
+	"compiler": {
+		"prefix": true
+	},
+	"dist": {
+		"target": ["src", "dist.css"],
+		"output": ["dist", "discord-you.theme.css"]
+	},
+	"dev": {
+		"target": ["src", "main.scss"],
+		"output": ["Cooltheme.theme.css"]
+	},
+	"base": {
+		"target": ["src", "main.scss"],
+		"output": ["dist", "discord-you.css"]
+	},
+	"addons": []
+}

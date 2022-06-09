@@ -1,0 +1,15 @@
+{
+	"name": "discord-you",
+	"version": "1.0.0d",
+	"description": "A customizable Discord theme based off of Google's Material 3 ( AKA Material You ) design system.",
+	"repository": "https://github.com/kings-discord-stuff/discord-you.git",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+	  "dev": "bd-scss dev",
+	  "build": "bd-scss build"
+	},
+	"dependencies": {
+	  "bd-scss": "^1.1.1"
+	}
+  }
