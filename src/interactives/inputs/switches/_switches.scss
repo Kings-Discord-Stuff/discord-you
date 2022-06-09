@@ -1,0 +1,45 @@
+@use "../../../material" as *;
+.control-1fl03- .container-2nx-BQ {
+    &.disabled-3ipGAF {
+        opacity: .2 !important;
+    }
+
+    height: 12px;
+    width: 36px;
+    margin-top: calc(24px - 12px);
+    background: var(--md-sys-color-surface-variant) !important;
+
+    &.checked-25WXMf {
+        background: var(--md-sys-color-primary-container) !important;
+
+        svg.slider-32CRPX {
+            transform: translateX(100%);
+            rect {
+                fill: var(--md-sys-color-primary);
+            }
+        }
+    }
+
+    svg.slider-32CRPX {
+        margin-top: -6px;
+        position: absolute;
+        top: 0;
+        left: -10px !important;
+        height: 24px;
+        width: 24px;
+        transition: all .2s ease;
+        rect {
+            filter: drop-shadow(0 2px 1px rgba($md-sys-color-background-dark, 0.5));
+            fill: white;
+            height: 20px;
+            width: 20px;
+            x: calc(50% - (20px / 2));
+            y: calc(50% - (20px / 2));
+            rx: 24px;
+            position: absolute;
+        }
+        svg {
+            display: none;
+        }
+    }
+}

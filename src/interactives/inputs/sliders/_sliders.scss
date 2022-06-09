@@ -1,0 +1,38 @@
+@use '../../../material' as *;
+
+.slider-1NC-Gf {
+    .track-1BI4CA .grabber-2GQyvM {
+        width: 24px;
+        border-radius: 24px;
+        margin-left: calc(-24px / 2);
+        border-color: var(--md-sys-color-primary);
+        background: var(--md-sys-color-primary);
+    }
+}
+
+.theme-dark {
+    .slider-1NC-Gf {
+        .bar-1Bhnl9 {
+            background: rgba($md-sys-color-primary-dark, 38%);
+            .barFill-2Bh7CX {
+                background: var(--md-sys-color-primary);
+            }
+        }
+        .speaking-2Crrvt {
+            background: var(--status-positive);
+        }
+    }
+}
+.theme-light {
+    .slider-1NC-Gf {
+        .bar-1Bhnl9 {
+            background: rgba($md-sys-color-primary-light, 38%);
+            .barFill-2Bh7CX {
+                background: var(--md-sys-color-primary);
+            }
+        }
+        .speaking-2Crrvt {
+            background: rgba($md-sys-color-primary-light, 100%);
+        }
+    }
+}
