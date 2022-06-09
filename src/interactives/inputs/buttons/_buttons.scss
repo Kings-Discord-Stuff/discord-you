@@ -1,0 +1,45 @@
+.button-f2h6uQ {
+  border-radius: 20px;
+
+  &.colorBrand-I6CyqQ.lookFilled-yCfaCM {
+    background: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+
+    &:hover {
+      background: var(--md-sys-color-primary-container);
+      color: var(--md-sys-color-on-secondary-container)
+    }
+  }
+
+  &.colorPrimary-2AuQVo.lookFilled-yCfaCM {
+    background: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-secondary-container);
+
+    &:hover {
+      background: var(--md-sys-color-secondary);
+      color: var(--md-sys-color-on-secondary);
+    }
+  }
+
+  &.lookOutlined-3yKVGo.colorRed-rQXKgM {
+    border-color: var(--md-sys-color-error-container);
+    color: var(--md-sys-color-on-background);
+
+    &:hover {
+      background-color: var(--md-sys-color-error-container);
+    }
+  }
+
+  &.disableButton-3BR0Vj.lookFilled-yCfaCM {
+    background: var(--md-sys-color-error-container);
+    color: var(--md-sys-color-on-error-container);
+  }
+
+  &.removeButton-v6eolJ.lookLink-15mFoz.colorPrimary-2AuQVo {
+    color: var(--md-sys-color-error);
+
+    &:hover div {
+      background-image: linear-gradient(0deg, transparent, transparent 1px, var(--md-sys-color-error) 0, var(--md-sys-color-error) 2px, transparent 0);
+    }
+  }
+}

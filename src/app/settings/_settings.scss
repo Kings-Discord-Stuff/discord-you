@@ -1,0 +1,10 @@
+@forward "./pages/pages";
+@forward "./sidepanel";
+
+.closeButton-PCZcma:hover {
+    background-color: var(--md-sys-color-primary-container);
+}
+
+.contentRegionShownSidebar-fHXkEg {
+    justify-content: space-between;
+}

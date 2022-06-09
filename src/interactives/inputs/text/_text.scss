@@ -1,0 +1,39 @@
+.channelTextArea-1FufC0 {
+  .scrollableContainer-15eg7h {
+    position: relative;
+    padding: 0;
+    border: 1px solid var(--md-sys-color-outline);
+    border-radius: 10px;
+    background: none;
+    transition: all .2s ease-in-out;
+    
+
+    .placeholder-1rCBhr {
+      transition: all .2s ease-in-out;
+    }
+  }
+  &::before {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-in-out;
+    opacity: .12;
+  }
+  &:focus-within {
+    .scrollableContainer-15eg7h .placeholder-1rCBhr {
+      color: var(--md-sys-color-on-primary-container);
+    }
+    .scrollableContainer-15eg7h {
+      border-color: var(--md-sys-color-primary);
+    }
+    &::before {
+      background-color: var(--md-sys-color-primary);
+    }
+  }
+}

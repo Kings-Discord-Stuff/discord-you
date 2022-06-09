@@ -1,0 +1,48 @@
+@use '../../../material' as *;
+
+.itemFilled-1cPbtg[role="radio"] {
+    background: none;
+
+    &[aria-checked="true"] {
+        color: var(--md-sys-color-on-primary-container);
+
+        path,
+        circle {
+            fill: var(--md-sys-color-primary);
+        }
+    }
+
+    .radioBar-3w9XY- {
+        position: relative;
+
+         div::before {
+            content: "";
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 32px;
+            height: 32px;
+            opacity: 0;
+            border-radius: 50%;
+            background: #00000000;
+            transition: all .2s ease;
+        }
+    }
+    &:active:not([aria-checked=true]):active {
+        background: none;
+
+        .radioBar-3w9XY- div::before {
+            opacity: 25%;
+            background: var(--md-sys-color-primary);
+        }
+    }
+
+    &:hover {
+        background: none;
+
+        .radioBar-3w9XY- div::before {
+            opacity: 5%;
+            background: var(--md-sys-color-primary);
+        }
+    }
+}
