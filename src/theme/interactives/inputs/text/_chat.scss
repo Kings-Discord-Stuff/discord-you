@@ -12,12 +12,11 @@
     background: none;
     transition: all .2s ease-in-out;
 
-
+    
     .placeholder-1rCBhr {
       transition: all .2s ease-in-out;
     }
   }
-
   &::before {
     top: 0;
     left: 0;
@@ -28,8 +27,10 @@
     border-radius: 10px;
     height: 100%;
     position: absolute;
+    pointer-events: none;
     transition: all .2s ease-in-out;
   }
+
 
   &:focus-within {
     .scrollableContainer-15eg7h .placeholder-1rCBhr {

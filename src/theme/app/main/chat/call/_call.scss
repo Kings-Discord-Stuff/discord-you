@@ -1,0 +1,99 @@
+@use "../../../../../core/material" as *;
+
+.callContainer-HtHELf {
+    .controlButton-2PMNom {
+        background: var(--md-sys-color-secondary);
+        display: flex;
+        height: 40px;
+        border-radius: 20px;
+
+
+        .controlIcon-10O-4h {
+            path {
+                fill: var(--md-sys-color-on-secondary) !important;
+            }
+        }
+
+        svg {
+            .colorable-3rVGna {
+                background: var(--md-sys-color-secondary);
+                height: 40px;
+                transition: .2s ease;
+            }
+        }
+
+        &.unmasked-3zpww7 {
+            display: none;
+        }
+
+        .contextMenuNub-NuTZ_U {
+            .contextMenuCaret-1swU58 {
+                height: 40px;
+                width: 20px;
+
+                path {
+                    stroke: var(--md-sys-color-on-secondary) !important;
+                }
+            }
+
+            transition: .2s ease;
+            position: relative;
+            height: 36px;
+            width: 20px;
+            border-radius: 0 20px 20px 0;
+            background: var(--md-sys-color-secondary);
+        }
+    }
+}
+
+.callContainer-HtHELf .controlButton-2PMNom[aria-label="Disconnect"] {
+    background: var(--md-sys-color-error) !important;
+
+    .controlIcon-10O-4h path {
+        fill: var(--md-sys-color-on-error) !important;
+    }
+}
+
+[aria-label="Share Your Screen"]:hover {
+    background: var(--md-sys-color-secondary) !important;
+}
+
+.controlButton-2PMNom:hover {
+    &::before {
+        background: rgba($md-sys-color-on-secondary-dark, 8%);
+    }
+
+    &:active::before {
+        background: rgba($md-sys-color-on-secondary-dark, 12%);
+    }
+}
+
+.callContainer-HtHELf .controlButton-2PMNom svg .colorable-3rVGna {
+    &:hover {
+        background: rgba($md-sys-color-on-secondary-dark, 8%);
+    }
+
+    &:active {
+        background: rgba($md-sys-color-on-secondary-dark, 12%);
+    }
+}
+
+.callContainer-HtHELf.theme-dark .controlButton-2PMNom .contextMenuNub-NuTZ_U {
+    &:hover {
+        background: rgba($md-sys-color-on-secondary-dark, 8%);
+    }
+
+    &:active {
+        background: rgba($md-sys-color-on-secondary-dark, 12%);
+    }
+}
+
+.callContainer-HtHELf.theme-dark .controlButton-2PMNom[aria-label="Disconnect"] {
+    &:hover::before {
+        background: rgba($md-sys-color-on-error-dark, 8%);
+    }
+
+    &:active::before {
+        background: rgba($md-sys-color-on-error-dark, 12%);
+    }
+}
