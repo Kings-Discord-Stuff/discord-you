@@ -1,4 +1,9 @@
+@use "../../../material" as *;
+
+
 .channelTextArea-1FufC0 {
+  background: var(--md-sys-color-surface);
+
   .scrollableContainer-15eg7h {
     position: relative;
     padding: 0;
@@ -6,12 +11,13 @@
     border-radius: 10px;
     background: none;
     transition: all .2s ease-in-out;
-    
+
 
     .placeholder-1rCBhr {
       transition: all .2s ease-in-out;
     }
   }
+
   &::before {
     top: 0;
     left: 0;
@@ -23,17 +29,47 @@
     height: 100%;
     position: absolute;
     transition: all .2s ease-in-out;
-    opacity: .12;
   }
+
   &:focus-within {
     .scrollableContainer-15eg7h .placeholder-1rCBhr {
       color: var(--md-sys-color-on-primary-container);
     }
+
     .scrollableContainer-15eg7h {
       border-color: var(--md-sys-color-primary);
     }
+  }
+}
+
+.theme-dark {
+  .form-3gdLxP {
     &::before {
-      background-color: var(--md-sys-color-primary);
+      background: linear-gradient(180deg, rgba($md-sys-color-surface-dark, 0) 0, $md-sys-color-surface-dark);
+    }
+
+    .channelTextArea-1FufC0 {
+      &:focus-within {
+        &::before {
+          background-color: rgba($md-sys-color-primary-dark, .12);
+        }
+      }
+    }
+  }
+}
+
+.theme-light {
+  .form-3gdLxP {
+    &::before {
+      background: linear-gradient(180deg, rgba($md-sys-color-surface-light, 0) 0, $md-sys-color-surface-light);
+    }
+
+    .channelTextArea-1FufC0 {
+      &:focus-within {
+        &::before {
+          background-color: rgba($md-sys-color-primary-light, .12);
+        }
+      }
     }
   }
 }

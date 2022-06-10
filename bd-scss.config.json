@@ -10,7 +10,7 @@
 		"prefix": true
 	},
 	"dist": {
-		"target": ["src", "dist.css"],
+		"target": ["src", "main.scss"],
 		"output": ["dist", "discord-you.theme.css"]
 	},
 	"dev": {
