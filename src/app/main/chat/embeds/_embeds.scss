@@ -1,16 +1,15 @@
 @use "../../../../material" as *;
+@use "../../../../utilities/utils" as *;
 
 .theme-dark {
     .embedFull-1HGV2S {
         background: rgba($md-sys-color-overlay, .05);
-        box-shadow: 0 0 2px #151515,
-                    0 5px 5px #151515;
+        @include boxShadow(1)
     }
 }
 .theme-light {
     .embedFull-1HGV2S {
         background: $md-sys-color-surface-light;
-        box-shadow: 0 0 2px #dbdbdb,
-                    0 5px 5px #dbdbdb;
+        @include boxShadow(1)
     }
 }
