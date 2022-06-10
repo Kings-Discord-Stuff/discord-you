@@ -1,0 +1,69 @@
+@use "../../../utilities/utils" as *;
+@use "../../../../core/material" as *;
+
+.reaction-3vwAF2 {
+    background: var(--md-sys-color-surface);
+    border: 1px solid var(--md-sys-color-outline);
+    position: relative;
+    transition: .2s ease;
+    overflow: hidden;
+
+    &.reactionMe-1PwQAc {
+        border: 1px solid var(--md-sys-color-secondary-container) !important;
+        background: var(--md-sys-color-secondary-container) !important;
+    }
+
+    .reactionInner-YJjOtT::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        transition: .2s ease;
+    }
+
+    .reactionCount-26U4As {
+        @include button;
+    }
+}
+
+.theme-dark {
+    .reaction-3vwAF2:hover {
+        background: none;
+        border: 1px solid var(--md-sys-color-outline);
+
+        &.reactionMe-1PwQAc {
+            @include boxShadow(1);
+
+            .reactionInner-YJjOtT::before {
+                background: rgba($md-sys-color-on-secondary-container-dark, 8%);
+            }
+        }
+
+        .reactionInner-YJjOtT::before {
+            background: rgba($md-sys-color-on-surface-dark, 8%);
+        }
+    }
+}
+.theme-light {
+    .reaction-3vwAF2:hover {
+        background: none;
+        border: 1px solid var(--md-sys-color-outline);
+
+        &.reactionMe-1PwQAc {
+            border: 1px solid var(--md-sys-color-secondary-container);
+            background: var(--md-sys-color-secondary-container);
+            @include boxShadow(1);
+
+            .reactionInner-YJjOtT::before {
+                background: rgba($md-sys-color-on-secondary-container-light, 8%);
+            }
+        }
+
+        .reactionInner-YJjOtT::before {
+            background: rgba($md-sys-color-on-surface-light, 8%);
+        }
+    }
+}
