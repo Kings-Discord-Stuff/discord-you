@@ -1,5 +1,5 @@
 @use "sass:color";
-@use "../material" as *;
+@use "../../core/material" as *;
 
 @function hexToRGB($hex) {
     @return color.red($hex), color.green($hex), color.blue($hex);
