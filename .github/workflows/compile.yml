@@ -9,16 +9,16 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
-      - name: Setup NodeJS"
+      - name: Setup NodeJS
         uses: actions/setup-node@v1
         with:
           node-version: 18
       - name: Install PNPM
         uses: pnpm/action-setup@v2.2.2
         with:
-          version: 6.0.2
+          version: 7.1.9
       - name: Clean install of dependencies
-        run: "pnpm i"
+        run: pnpm i
       - name: Run build script
         run: pnpm build
       - name: Deploy
